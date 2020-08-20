@@ -40,7 +40,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--main-color);
-
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -49,6 +49,72 @@ h1 {
 
 p {
 	margin: 0;
+}
+
+a {
+	margin: 0;
+	text-decoration: none;
+	color: var(--color-font);
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	color: var(--color-font);
+}
+
+.header__icon {
+	width: auto;
+	display: flex;
+	align-items: center;
+	margin-left: var(--margin-header);
+}
+
+.header__icon--logo {
+	width: var(--icon-size);
+    height: var(--icon-size);
+    line-height: var(--icon-size);
+    font-size: 30px;
+    color: var(--main-color);
+	background-color: var(--icon-background-color);
+    text-align: center;
+	font-family: var(--icon-font-family);
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.header__icon--lm {
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.header__menu {
+	/* outline: 2px red solid; */
+	display: flex;
+	align-items: center;
+	margin-right: var(--margin-header);
+}
+
+.header__menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header__menu li {
+	display: inline-block;
+}
+
+.header__menu li > a {
+	margin-left: var(--margin-header);
+	cursor: pointer;
+}
+
+.header__menu li > a:hover {
+	text-decoration: underline;
 }
 
 .hero {
@@ -81,7 +147,6 @@ p {
 	justify-content: center;
 	align-items: center;
 	color: var(--main-color);
-	font-family: 'Roboto', sans-serif;
 }
 
 .hero__details--profile {
@@ -149,4 +214,9 @@ p {
 	--twitter-color: #00acee;
 	--git-color: #171515;
 	--insta-color: #C850C0;
+	--icon-size: 50px;
+	--icon-font-family: 'Raleway', sans-serif;
+	--icon-background-color: #14213d;
+	--color-font: #212529;
+	--margin-header: 100px;
 }
