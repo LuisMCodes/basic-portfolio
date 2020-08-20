@@ -115,7 +115,7 @@ a {
 
 .header__menu li > a:hover {
 	text-decoration: underline;
-	color: black;
+	color: var(--color-font-hover);
 }
 
 .hero {
@@ -219,5 +219,6 @@ a {
 	--icon-font-family: 'Raleway', sans-serif;
 	--icon-background-color: #14213d;
 	--color-font: #212529;
+	--color-font-hover: #464747;
 	--margin-header: 100px;
 }
