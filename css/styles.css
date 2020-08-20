@@ -115,6 +115,7 @@ a {
 
 .header__menu li > a:hover {
 	text-decoration: underline;
+	color: black;
 }
 
 .hero {
