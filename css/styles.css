@@ -190,7 +190,6 @@ a {
 
 .hero__details--social-media > i:hover {
 	cursor: pointer;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 .icon-twitter:hover {
