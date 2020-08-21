@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?579bb0');
-	src:  url('../fonts/icomoon.eot?579bb0#iefix') format('embedded-opentype'),
-	  url('../fonts/icomoon.ttf?579bb0') format('truetype'),
-	  url('../fonts/icomoon.woff?579bb0') format('woff'),
-	  url('../fonts/icomoon.svg?579bb0#icomoon') format('svg');
+	src:  url('../fonts/icomoon.eot?2aopdw');
+	src:  url('../fonts/icomoon.eot?2aopdw#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?2aopdw') format('truetype'),
+	  url('../fonts/icomoon.woff?2aopdw') format('woff'),
+	  url('../fonts/icomoon.svg?2aopdw#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -25,6 +25,9 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-linkedin:before {
+	content: "\e903";
+  }
   .icon-git:before {
 	content: "\e900";
   }
@@ -34,6 +37,7 @@
   .icon-twitter:before {
 	content: "\e902";
   }
+  
   
 
 body {
@@ -54,7 +58,6 @@ p {
 a {
 	margin: 0;
 	text-decoration: none;
-	color: var(--color-font);
 }
 
 .header {
@@ -111,6 +114,7 @@ a {
 .header__menu li > a {
 	margin-left: var(--margin-header);
 	cursor: pointer;
+	color: var(--color-font);
 }
 
 .header__menu li > a:hover {
@@ -175,7 +179,7 @@ a {
 }
 
 .hero__details--social-media {
-	width: 200px;
+	width: 250px;
 	/* outline: 2px white solid; */
 	margin-top: 20px;
 	display: flex;
@@ -184,12 +188,20 @@ a {
 	transition: 420ms;
 }
 
+.hero__details--social-media a i {
+	color: var(--main-color);
+}
+
 .hero__details--social-media > i:hover {
 	cursor: pointer;
 }
 
 .icon-twitter:hover {
 	color: var(--twitter-color);
+}
+
+.icon-linkedin:hover {
+	color: var(--linkedin-color);
 }
 
 .icon-git:hover {
@@ -236,6 +248,7 @@ a {
 	--title-size: 40px;
 	--text-size: 18px;
 	--twitter-color: #00acee;
+	--linkedin-color: #0e76a8;
 	--git-color: orange;
 	--insta-color: #C850C0;
 	--icon-size: 50px;
